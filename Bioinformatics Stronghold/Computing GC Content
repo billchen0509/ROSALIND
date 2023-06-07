@@ -1,0 +1,15 @@
+from Bio import SeqIO
+
+max_seq_id = None
+max_gc_content = 0
+
+for seq in SeqIO.parse("E:\cs-selflearning/rosalind_ini5.txt",'fasta'):
+    sequence = str(seq.seq)
+    seq_id = seq.id
+    gc_content = (seq.count('C') + seq.count('G')) / len(sequence) *100
+    if gc_content > max_gc_content:
+        max_seq_id = seq_id
+        max_gc_content = gc_content
+        
+print(max_seq_id)
+print(f'{gc_content:.6f}')

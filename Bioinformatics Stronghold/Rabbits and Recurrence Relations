@@ -20,3 +20,9 @@ Furthermore, these pairs are the only source new rabbits for this generation.
 Since any pair of rabbits alive in the previous generation are still alive this generation, we get the recurrence Fn=Fn−1+k⋅Fn−2
 .
 ###
+'''
+任何给定月份的兔子总数是上一代兔子及其后代兔子的总和。
+两代前还活着的任何一对兔子都会繁殖并生下 k 个兔子宝宝。此外，这些对是这一代新兔子的唯一来源。
+由于上一代还活着的任何一对兔子在这一代还活着，我们得到了递归Fn=Fn - 1+ k ⋅Fn - 2
+
+'''

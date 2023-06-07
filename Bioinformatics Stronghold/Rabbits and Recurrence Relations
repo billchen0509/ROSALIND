@@ -7,3 +7,16 @@ def rabbit(n,k):
         return rabbit((n-1),k)+k*rabbit((n-2),k)
     
 print(rabbit(30,2))
+
+###
+Let Fn be the number of rabbits in the nth generation. We have F1=F2=1 by the problem definition.
+
+The total pairs of rabbit at any given month is the sum of rabbits from the previous generation and their offspring. 
+
+Any pair of rabbits that were alive two generations ago will reproduce and make k rabbit babies. 
+
+Furthermore, these pairs are the only source new rabbits for this generation. 
+
+Since any pair of rabbits alive in the previous generation are still alive this generation, we get the recurrence Fn=Fn−1+k⋅Fn−2
+.
+###

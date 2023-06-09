@@ -1,0 +1,11 @@
+# my code
+str1 = 'GAGCCTACTAACGGGAT'
+str2 = 'CATCGTAATGACGGCCT'
+
+diff = 0
+
+for i in range(len(str1)):
+    if str1[i] != str2[i]:
+        diff +=1
+
+print(diff)

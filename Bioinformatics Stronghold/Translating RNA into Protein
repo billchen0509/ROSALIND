@@ -1,0 +1,7 @@
+from Bio.Seq import Seq
+
+rna = Seq(open('D:\Downloads/rosalind_prot.txt','r').readline().strip())
+
+protein = rna.translate(to_stop=True)
+
+print(protein)

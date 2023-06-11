@@ -1,0 +1,6 @@
+str_s = 'GATATATGCATATACTT'
+str_t = 'ATAT'
+
+for p in range(len(str_s)):
+    if str_s[p:].startswith(str_t):
+        print(p+1)
